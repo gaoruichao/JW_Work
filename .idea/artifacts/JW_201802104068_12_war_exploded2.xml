@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JW_201802104068_12:war exploded2">
+    <output-path>$PROJECT_DIR$/out/artifacts/JW_201802104068_12_war_exploded2</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JW_201802104068_12" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../jar/fastjson-1.2.62.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="JW_201802104068_12/web/Web" />
+    </root>
+  </artifact>
+</component>

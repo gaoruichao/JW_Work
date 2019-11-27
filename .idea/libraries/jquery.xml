@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="jquery" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/../HTML学习/jQuery/jQuery.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../HTML学习/jQuery/jQuery.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

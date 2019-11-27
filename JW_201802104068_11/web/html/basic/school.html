@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>title</title>
+    <script src="../js/jquery.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+                $.ajax({
+                    url : "/school/list.ctl", //请求服务器资源
+                    type : "get",
+
+                    success : function(msg) {
+                        var obj= eval("(" + msg + ")");//json字串->json对象,方便遍历
+                        var table = "<tr><td>ID</td><td>编号</td><td>学位</td><td>备注</td></tr>";
+                        for (var i in obj.schools){
+                            table += "<tr><td>" + obj.schools[i].id + "</td><td>" + obj.schools[i].description + "</td><td>" + obj.schools[i].no + "</td><td>" + obj.schools[i].remarks + "</td></tr>";
+                        }
+                        $("#table").html(table);
+                    },
+                    error:function(){  //请求失败的回调方法
+                        alert("请求失败，请重试!");
+                    }
+                });
+        });
+    </script>
+
+</head>
+<body>
+<table border = "1px" bgcolor="#ffe4c4" id = "table">
+</table>
+
+</body>
+</html>
